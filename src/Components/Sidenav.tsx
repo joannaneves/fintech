@@ -1,11 +1,11 @@
-import resumo from "../assets/icons/resumo.svg";
-import vendas from "../assets/icons/vendas.svg";
-import webhooks from "../assets/icons/webhooks.svg";
-import configuracoes from "../assets/icons/configuracoes.svg";
-import contato from "../assets/icons/contato.svg";
-import sair from "../assets/icons/sair.svg";
-import FintechSVG from "../assets/FintechSVG";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
+import FintechSVG from "../assets/FintechSVG"
+import configuracoes from "../assets/icons/configuracoes.svg"
+import contato from "../assets/icons/contato.svg"
+import resumo from "../assets/icons/resumo.svg"
+import sair from "../assets/icons/sair.svg"
+import vendas from "../assets/icons/vendas.svg"
+import webhooks from "../assets/icons/webhooks.svg"
 
 const Sidenav = () => {
   return (
@@ -16,13 +16,13 @@ const Sidenav = () => {
           <span>
             <img src={resumo} alt="" />
           </span>
-          <NavLink to="/">Resumo</NavLink>
+          <NavLink to="/">Resume</NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="" />
           </span>
-          <NavLink to="/vendas">Vendas</NavLink>
+          <NavLink to="/vendas">Sales</NavLink>
         </li>
         <li>
           <span>
@@ -34,23 +34,23 @@ const Sidenav = () => {
           <span>
             <img src={configuracoes} alt="" />
           </span>
-          <a>Configurações</a>
+          <a>Configuration</a>
         </li>
         <li>
           <span>
             <img src={contato} alt="" />
           </span>
-          <a>Contato</a>
+          <a>Contact</a>
         </li>
         <li>
           <span>
             <img src={sair} alt="" />
           </span>
-          <a>Sair</a>
+          <a>Log Out</a>
         </li>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Sidenav;
+export default Sidenav

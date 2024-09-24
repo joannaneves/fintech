@@ -1,15 +1,15 @@
-import GraficoVendas from "../Components/GraficoVendas";
-import { useData } from "../Context/DataContext";
+import GraficoVendas from "../Components/GraficoVendas"
+import { useData } from "../Context/DataContext"
 
 const Resumo = () => {
-  const { data } = useData();
+  const { data } = useData()
 
-  if (data === null) return null;
+  if (data === null) return null
   return (
     <section>
       <div className="resumo flex mb">
         <div className="box">
-          <h2>Vendas</h2>
+          <h2>Sales</h2>
           <span>
             {data
               .filter((i) => i.status !== "falha")
@@ -18,7 +18,7 @@ const Resumo = () => {
           </span>
         </div>
         <div className="box">
-          <h2>Recebido</h2>
+          <h2>Received</h2>
           <span>
             {data
               .filter((i) => i.status === "pago")
@@ -27,7 +27,7 @@ const Resumo = () => {
           </span>
         </div>
         <div className="box">
-          <h2>Processando</h2>
+          <h2>Processing</h2>
           <span>
             {data
               .filter((i) => i.status === "processando")
@@ -40,7 +40,7 @@ const Resumo = () => {
         <GraficoVendas data={data} />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Resumo;
+export default Resumo

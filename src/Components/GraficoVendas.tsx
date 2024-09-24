@@ -54,12 +54,7 @@ const GraficoVendas = ({ data }: { data: IVenda[] }) => {
           stroke="#FBCB21"
           strokeWidth={3}
         />
-        <Line
-          type="monotone"
-          dataKey="falha"
-          stroke="#000000"
-          strokeWidth={3}
-        />
+        <Line type="monotone" dataKey="falha" stroke="#000000" strokeWidth={3} />
       </LineChart>
     </ResponsiveContainer>
   )
